@@ -43,7 +43,7 @@ public class HusbandFragment extends Fragment {
     /**
      * set TextWatcher cho edit text để theo dõi input
      */
- private void setTextWatcher(){
+    private void setTextWatcher() {
         mSalaryEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
