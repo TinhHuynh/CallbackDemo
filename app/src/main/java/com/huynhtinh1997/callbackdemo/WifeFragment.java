@@ -38,7 +38,7 @@ public class WifeFragment extends Fragment implements WifeCallback {
     /**
      * Cập nhật lương lên UI
      */
-    private void updateUI(int salary){
+    private void updateUI(int salary) {
         String result = "Cô Bách nhận được: " + salary;
         mSalaryTextView.setText(result);
     }
