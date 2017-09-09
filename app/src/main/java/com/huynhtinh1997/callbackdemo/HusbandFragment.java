@@ -75,6 +75,9 @@ public class HusbandFragment extends Fragment {
         });
     }
 
+    /**
+     * Gọi vợ và đưa lương
+     */
     private void callWifeAndGiveSalary(int salary) {
         mWifeCallback.onReceiveSalary(salary);
     }
