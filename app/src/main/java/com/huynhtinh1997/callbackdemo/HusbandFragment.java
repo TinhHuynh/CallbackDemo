@@ -34,6 +34,16 @@ public class HusbandFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_husband, container, false);
         mSalaryEditText = view.findViewById(R.id.input_salary);
 
+        setTextWatcher();
+
+        return view;
+
+    }
+
+    /**
+     * set TextWatcher cho edit text để theo dõi input
+     */
+ ivate void setTextWatcher(){
         mSalaryEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -63,8 +73,6 @@ public class HusbandFragment extends Fragment {
 
             }
         });
-        return view;
-
     }
 
     private void callWifeAndGiveSalary(int salary) {
