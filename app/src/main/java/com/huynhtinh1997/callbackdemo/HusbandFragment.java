@@ -14,7 +14,7 @@ import android.widget.EditText;
  * Created by huynhtinh1997 on 08/09/2017.
  */
 
-public class FragmentHusband extends Fragment {
+public class HusbandFragment extends Fragment {
 
     private EditText mSalaryEditText;
 

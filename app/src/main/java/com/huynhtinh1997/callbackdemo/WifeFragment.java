@@ -15,7 +15,7 @@ import android.widget.TextView;
 /**
  * Vợ sẽ thực thi interface WifeCallback
  */
-public class FragmentWife extends Fragment implements WifeCallback {
+public class WifeFragment extends Fragment implements WifeCallback {
 
     private TextView mSalaryTextView;
 

@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 
 public class HouseActivity extends AppCompatActivity {
 
-    private FragmentHusband mFragmentHusband;
-    private FragmentWife mFragmentWife;
+    private HusbandFragment mHusbandFragment;
+    private WifeFragment mWifeFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +21,15 @@ public class HouseActivity extends AppCompatActivity {
      * Khởi tạo và host 2 fragment vợ chồng vào activity nhà
      */
     private void initFragments() {
-        mFragmentHusband = new FragmentHusband();
-        mFragmentWife = new FragmentWife();
+        mHusbandFragment = new HusbandFragment();
+        mWifeFragment = new WifeFragment();
 
-        mFragmentHusband.setWifeCallback(mFragmentWife);
+        mHusbandFragment.setWifeCallback(mWifeFragment);
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .add(R.id.container_fragment_husband, mFragmentHusband)
-                .add(R.id.container_fragment_wife, mFragmentWife)
+                .add(R.id.container_fragment_husband, mHusbandFragment)
+                .add(R.id.container_fragment_wife, mWifeFragment)
                 .commit();
     }
 
