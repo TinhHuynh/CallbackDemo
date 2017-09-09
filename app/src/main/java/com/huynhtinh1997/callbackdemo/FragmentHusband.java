@@ -20,7 +20,9 @@ public class FragmentHusband extends Fragment {
 
     private WifeCallback mWifeCallback;
 
-    // nhận diện vợ để gọi
+    /**
+     * Nhận diện vợ để gọi
+     */
     public void setWifeCallback(WifeCallback wifeCallback) {
         mWifeCallback = wifeCallback;
     }
@@ -38,7 +40,9 @@ public class FragmentHusband extends Fragment {
 
             }
 
-            // khi nhập từng con số nhập lương, gọi vợ và đưa lương
+            /**
+             * khi nhập từng con số nhập lương, gọi vợ và đưa lương
+             */
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 try {

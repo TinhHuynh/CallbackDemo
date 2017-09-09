@@ -12,6 +12,9 @@ import android.widget.TextView;
  * Created by huynhtinh1997 on 08/09/2017.
  */
 
+/**
+ * Vợ sẽ thực thi interface WifeCallback
+ */
 public class FragmentWife extends Fragment implements WifeCallback {
 
     private TextView mSalaryTextView;
@@ -26,11 +29,15 @@ public class FragmentWife extends Fragment implements WifeCallback {
         return view;
     }
 
+
     @Override
     public void onReceiveSalary(int salary) {
         updateUI(salary);
     }
 
+    /**
+     * Cập nhật lương lên UI
+     */
     private void updateUI(int salary){
         String result = "Cô Bách nhận được: " + salary;
         mSalaryTextView.setText(result);

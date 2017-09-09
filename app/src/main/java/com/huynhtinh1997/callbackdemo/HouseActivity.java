@@ -18,7 +18,7 @@ public class HouseActivity extends AppCompatActivity {
     }
 
     /**
-     * khởi tạo và host 2 fragment vợ chồng vào activity nhà
+     * Khởi tạo và host 2 fragment vợ chồng vào activity nhà
      */
     private void initFragments() {
         mFragmentHusband = new FragmentHusband();
